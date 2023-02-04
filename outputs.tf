@@ -13,3 +13,7 @@ output "key_name" {
 output "vpc_name" {
   value = aws_vpc.main.id
 }
+
+output "subnet_name" {
+  value = aws_subnet.public_subnets[*].id
+}
